@@ -8,7 +8,7 @@ Laravel client for the [Jayik Merchant API v2](https://www.jayik.app/api-docs): 
 
 - Laravel 8 – 13, PHP 7.4+
 - Every endpoint of the Merchant API (39) is covered
-- Unofficial package; not maintained by Jayik
+- Official package, maintained by Jayik
 
 ## Contents
 
@@ -637,4 +637,4 @@ Jayik::client()->post('v2/something', ['field' => 'value']);
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
