@@ -1,0 +1,47 @@
+{
+    "name": "jayik/laravel",
+    "description": "Laravel client for the Jayik Merchant API v2: orders, warehouses, categories, reference data, API keys and signed webhooks.",
+    "keywords": ["laravel", "jayik", "delivery", "iraq", "merchant", "marketplace", "webhook"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/routing": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^9.5|^10.5|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jayik\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jayik\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jayik\\Laravel\\JayikServiceProvider"
+            ],
+            "aliases": {
+                "Jayik": "Jayik\\Laravel\\Facades\\Jayik"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

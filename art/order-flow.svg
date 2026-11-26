@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380" role="img" aria-label="Order lifecycle: Pending, AwaitingPickup, InTransit, Received, Delivered, with cancel and return branches">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L9 5 L1 9" fill="none" stroke="#0A6E2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowMuted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L9 5 L1 9" fill="none" stroke="#8A9A91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="1278" height="378" rx="24" fill="#F7FAF6" stroke="#E4E9E2" stroke-width="2"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="56" y="56" font-size="13" font-weight="700" letter-spacing="2.2" fill="#0A6E2E">ORDER LIFECYCLE</text>
+    <text x="1224" y="56" text-anchor="end" font-size="13" fill="#6B7C73">names are the values of status.name</text>
+
+    <!-- main path arrows -->
+    <g stroke="#0A6E2E" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="150" y1="100" x2="150" y2="120"/>
+      <line x1="239" y1="150" x2="301" y2="150"/>
+      <line x1="499" y1="150" x2="571" y2="150"/>
+      <line x1="729" y1="150" x2="821" y2="150"/>
+      <line x1="979" y1="150" x2="1051" y2="150"/>
+    </g>
+
+    <!-- branch arrows -->
+    <g stroke="#8A9A91" stroke-width="2" fill="none" stroke-dasharray="5 6" marker-end="url(#arrowMuted)">
+      <line x1="190" y1="180" x2="190" y2="240"/>
+      <line x1="360" y1="180" x2="360" y2="240"/>
+      <line x1="900" y1="180" x2="900" y2="240"/>
+      <line x1="979" y1="270" x2="1014" y2="270"/>
+    </g>
+
+    <!-- arrow labels -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="600" fill="#0A6E2E" text-anchor="middle">
+      <text x="150" y="92">create()</text>
+      <text x="270" y="112">readyToPickup()</text>
+      <text x="275" y="216" fill="#C0392B">cancel()</text>
+    </g>
+    <g font-size="12.5" fill="#6B7C73" text-anchor="middle">
+      <text x="535" y="138">picked up</text>
+      <text x="775" y="138">out for delivery</text>
+      <text x="1015" y="138">handed over</text>
+      <text x="912" y="216" text-anchor="start">not delivered</text>
+    </g>
+
+    <!-- main nodes -->
+    <g font-size="15" font-weight="650" text-anchor="middle" fill="#0B1410">
+      <rect x="65" y="124" width="170" height="52" rx="26" fill="#FFFFFF" stroke="#BFDCC6" stroke-width="2"/>
+      <text x="150" y="155.5">Pending</text>
+
+      <rect x="305" y="124" width="190" height="52" rx="26" fill="#FFFFFF" stroke="#BFDCC6" stroke-width="2"/>
+      <text x="400" y="155.5">AwaitingPickup</text>
+
+      <rect x="575" y="124" width="150" height="52" rx="26" fill="#E5F4E8" stroke="#BFDCC6" stroke-width="2"/>
+      <text x="650" y="155.5">InTransit</text>
+
+      <rect x="825" y="124" width="150" height="52" rx="26" fill="#E5F4E8" stroke="#BFDCC6" stroke-width="2"/>
+      <text x="900" y="155.5">Received</text>
+
+      <rect x="1055" y="124" width="169" height="52" rx="26" fill="#0A6E2E"/>
+      <circle cx="1088" cy="150" r="11" fill="#35D85F"/>
+      <path d="M1082.6 150.4 l3.8 3.8 l7 -7.8" fill="none" stroke="#0B1410" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1152" y="155.5" fill="#FFFFFF">Delivered</text>
+    </g>
+
+    <!-- branch nodes -->
+    <g font-size="14" font-weight="600" text-anchor="middle">
+      <rect x="160" y="244" width="230" height="52" rx="26" fill="#FDF1EF" stroke="#EBC2BC" stroke-width="2"/>
+      <text x="275" y="275" fill="#C0392B">CancelledByMerchant</text>
+
+      <rect x="825" y="244" width="150" height="52" rx="26" fill="#F2F6F1" stroke="#CDD7CF" stroke-width="2"/>
+      <text x="900" y="275" fill="#3A4942">Returned</text>
+
+      <rect x="1018" y="244" width="206" height="52" rx="26" fill="#F2F6F1" stroke="#CDD7CF" stroke-width="2"/>
+      <text x="1121" y="275" fill="#3A4942">back to your warehouse</text>
+    </g>
+
+    <text x="56" y="342" font-size="13" fill="#6B7C73">Other statuses you may see: PickupDelayed · InDeliveryCompanyWarehouse · HandOver · Delayed · ReDelivery · ReturnedToCompany · Cancelled</text>
+  </g>
+</svg>

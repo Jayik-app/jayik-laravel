@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="jayik/laravel — Laravel client for the Jayik Merchant API">
+  <defs>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#35D85F" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#35D85F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0C8A39" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0C8A39" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1280" height="420" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="420" fill="#0B1410"/>
+    <rect width="1280" height="420" fill="url(#dots)"/>
+    <circle cx="1080" cy="40" r="360" fill="url(#glowB)"/>
+    <circle cx="180" cy="470" r="300" fill="url(#glowA)"/>
+
+    <!-- delivery route -->
+    <path d="M72 384 C 260 384, 300 352, 470 352 S 620 392, 700 372" fill="none" stroke="#35D85F" stroke-opacity="0.5" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <circle cx="72" cy="384" r="6" fill="#0B1410" stroke="#35D85F" stroke-width="2.5"/>
+
+    <!-- badge -->
+    <rect x="72" y="66" width="246" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <circle cx="94" cy="84" r="5" fill="#35D85F"/>
+    <text x="110" y="89.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#E5F4E8">Laravel 8 – 13  ·  PHP 7.4+</text>
+
+    <!-- title -->
+    <text x="68" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="78" font-weight="800" letter-spacing="-2" fill="#FFFFFF">jayik<tspan fill="#35D85F">/</tspan>laravel</text>
+    <text x="72" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" font-weight="500" fill="#E5F4E8">Laravel client for the Jayik Merchant API</text>
+    <text x="72" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#9DB0A5">Orders  ·  Warehouses  ·  Signed webhooks  ·  Marketplaces</text>
+
+    <!-- install pill -->
+    <rect x="72" y="300" width="356" height="44" rx="22" fill="#35D85F"/>
+    <text x="96" y="328" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#0B1410">$ composer require jayik/laravel</text>
+
+    <!-- code card -->
+    <rect x="700" y="62" width="512" height="284" rx="20" fill="#101C16" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <circle cx="730" cy="90" r="6" fill="#FFFFFF" fill-opacity="0.18"/>
+    <circle cx="750" cy="90" r="6" fill="#FFFFFF" fill-opacity="0.18"/>
+    <circle cx="770" cy="90" r="6" fill="#FFFFFF" fill-opacity="0.18"/>
+    <text x="1188" y="95" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#6B7C73">OrderController.php</text>
+    <line x1="700" y1="114" x2="1212" y2="114" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15.5" fill="#D6E2DB">
+      <text x="726" y="150"><tspan fill="#FFFFFF">$order</tspan> = <tspan fill="#35D85F">Jayik</tspan>::orders()-&gt;<tspan fill="#8BE9A4">create</tspan>([</text>
+      <text x="764" y="176"><tspan fill="#F2D38B">'customer_phone'</tspan> =&gt; <tspan fill="#F2D38B">'07809876543'</tspan>,</text>
+      <text x="764" y="202"><tspan fill="#F2D38B">'amount'</tspan> =&gt; <tspan fill="#7FD1FF">25000</tspan>,</text>
+      <text x="764" y="228"><tspan fill="#F2D38B">'governorate_id'</tspan> =&gt; <tspan fill="#7FD1FF">1</tspan>,</text>
+      <text x="726" y="254">]);</text>
+      <text x="726" y="298"><tspan fill="#35D85F">Jayik</tspan>::orders()-&gt;<tspan fill="#8BE9A4">readyToPickup</tspan>(<tspan fill="#FFFFFF">$order</tspan>[<tspan fill="#F2D38B">'tr'</tspan>]);</text>
+    </g>
+
+    <!-- status chip -->
+    <rect x="1046" y="322" width="186" height="48" rx="24" fill="#FFFFFF"/>
+    <circle cx="1074" cy="346" r="13" fill="#0A6E2E"/>
+    <path d="M1068 346.5 l4.4 4.4 l8 -9" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1096" y="351.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0B1410">Delivered</text>
+  </g>
+</svg>
