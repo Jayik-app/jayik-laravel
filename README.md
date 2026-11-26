@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="art/banner.svg" alt="jayik/laravel — Laravel client for the Jayik Merchant API" width="100%">
+  <img src="https://raw.githubusercontent.com/Jayik-app/jayik-laravel/main/art/banner.svg" alt="jayik/laravel — Laravel client for the Jayik Merchant API" width="100%">
 </p>
 
 # jayik/laravel
@@ -120,7 +120,7 @@ public function store(\Jayik\Laravel\Jayik $jayik) { $jayik->orders()->create([.
 ## Orders
 
 <p align="center">
-  <img src="art/order-flow.svg" alt="Order status flow" width="100%">
+  <img src="https://raw.githubusercontent.com/Jayik-app/jayik-laravel/main/art/order-flow.svg" alt="Order status flow" width="100%">
 </p>
 
 ### Create an order
@@ -389,7 +389,7 @@ Jayik::withKey($vendor->jayik_api_key)->orders()->create([...]);
 ## Webhooks
 
 <p align="center">
-  <img src="art/webhook-flow.svg" alt="Webhook flow" width="100%">
+  <img src="https://raw.githubusercontent.com/Jayik-app/jayik-laravel/main/art/webhook-flow.svg" alt="Webhook flow" width="100%">
 </p>
 
 Jayik sends a `POST` to your URL whenever one of your orders is created or changes. The package registers the route, verifies the signature and dispatches a Laravel event.
